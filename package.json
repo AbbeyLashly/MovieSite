@@ -1,0 +1,27 @@
+{
+  "name": "nodeweb",
+  "version": "1.0.0",
+  "description": "this is a node APP",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bower": "^1.7.9",
+    "bootstrap": "^3.3.6",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "jquery": "^2.2.3",
+    "mongoose": "^4.4.15",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "movie"
+  ],
+  "author": "zoujie",
+  "license": "ISC"
+}

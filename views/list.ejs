@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%=title %></title>
+	<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css" />
+	<style type="text/css">
+		.row{line-height: 35px}
+		.row .col-xs-3{font-weight: bold;}
+		th,td{text-align: center;vertical-align: middle;}
+	</style>
+</head>
+<body>
+	<header><a href="http://localhost:3000/"><img src="/img/adminbg.png" width="100%" /></a></header>
+	<div class="container-fluid" style="width:100%;margin-top:10px">
+		<section>
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span12">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										影片名称
+									</th>
+									<th>
+										导演
+									</th>
+									<th>
+										国家
+									</th>
+									<th>
+										语种
+									</th>
+									<th>
+										视频地址
+									</th>
+									<th>
+										上映时间
+									</th>
+									<th>
+										操作
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+							<% movies.forEach(function(item){ %>
+								<tr>
+									<td>
+										<%=item.moviename %>
+									</td>
+									<td>
+										<%=item.director %>
+									</td>
+									<td>
+										<%=item.country %>
+									</td>
+									<td>
+										<%=item.language %>
+									</td>
+									<td>
+										<%=item.movieurl %>
+									</td>
+									<td>
+										<%=item.movieshowtime %>
+									</td>
+									<td>
+										<a href="/admin/update/<%=item._id %>" class="btn btn-success alter">修改</a>
+										<a href="javascript:;" data-id="<%=item._id %>" class="btn btn-success delete">删除</a>
+									</td>
+								</tr>
+							<% }) %>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+<script src="/jquery.js"></script>
+<script src="/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/js/delete.js"></script>
