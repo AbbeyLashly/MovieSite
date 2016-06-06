@@ -1,3 +1,3 @@
-# MovieSite
-this is a  Movie WebSite which is based in Node.
-And in the future ,you can go on to expand this code,it can be a movie site where people can share movies which he or her like.
+                                               
+    这是基于基于node+mongodb+ejs开发的电影网站，网站的功包括首页海报展示页面、电影详细信息展示及播放、电影信息录入、后台电影信息管理（包括删除和修改），使用简单，当然拓展性也好，可以基于上面进一步进行逻辑开发和权限管理的开发。
+   
