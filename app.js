@@ -7,7 +7,7 @@ var Movie = require('./models/movie')
 var port = process.env.PORT || 3000
 var app = express()
 
-mongoose.connect('mongodb://localhost/imooc')
+mongoose.connect('mongodb://localhost/moviesite')
 
 app.set('views','./views')
 app.set('view engine','ejs')
@@ -18,22 +18,6 @@ app.listen(port)
 
 console.log("node start success at port:"+port)
 
-// var movie = new Movie({
-// 	director:'邹杰',//导演
-// 	moviename:'小邹大战小乐',//影片名字
-// 	country:'中国',//电影出产国家
-// 	language:'中文',//语种
-// 	movieshowtime:'2016',
-// 	movieimgurl:'http://icon.nipic.com/block.gif',//海报URL
-// 	movieurl:'http://player.youku.com/player.php/sid/XNTQ1NTEwNTI0/v.swf',//视频URL
-// 	movienote:''
-// })
-// movie.save(function(error,res){
-// 	if(error){
-// 		console.log(error)
-// 	}
-// 	console.log(res)
-// })
 
 //首页路由
 app.get('/',function(req,res){

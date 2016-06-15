@@ -1,12 +1,12 @@
 {
-  "name": "nodeweb",
+  "name": "moviesite",
   "version": "1.0.0",
-  "description": "this is a node APP",
+  "description": "this is a movie website which is based in Node",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.15.0",
-    "bower": "^1.7.9",
     "bootstrap": "^3.3.6",
+    "bower": "^1.7.9",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
     "jquery": "^2.2.3",
@@ -17,11 +17,19 @@
     "coffee-script": "^1.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zj0715zh/MovieSite.git"
   },
   "keywords": [
     "movie"
   ],
   "author": "zoujie",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zj0715zh/MovieSite/issues"
+  },
+  "homepage": "https://github.com/zj0715zh/MovieSite#readme"
 }
